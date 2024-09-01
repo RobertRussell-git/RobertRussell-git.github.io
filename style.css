@@ -1,0 +1,369 @@
+* {
+  width: 600;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  font-size: 14px;
+  height: 13vh;
+}
+
+.Background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: blur(8px);
+  background-color: #f2ebe2;
+}
+
+.navbar {
+  margin: auto;
+  padding: 0.5rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4 12px rgba(0, 0, 0, 0.1);
+  margin-top: 55px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  z-index: 1000;
+}
+
+.nav-link,
+.drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.drop-down {
+  position: absolute;
+  padding: 0.5rem 0;
+  margin: 0.5rem --0.5rem;
+  background: antiquewhite;
+  color: black;
+  color: rgb(212, 127, 57);
+  border-radius: 0.5rem;
+  font-size: 12px;
+  display: none;
+}
+.nav-link:hover {
+  background-color: black;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+  display: block;
+}
+
+.services a {
+  display: flex;
+}
+
+.services .dropdown-icon {
+  font-size: 20pk;
+  position: relative;
+  right: -5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.services:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+  background: black;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+@font-face {
+  font-family: myFont1;
+  src: url(DOODLE.ttf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src: url(Rosintha\ demo.otf);
+}
+
+@font-face {
+  font-family: myFont3;
+  src: url(Chameleon.ttf);
+}
+
+#Textfront {
+  font-family: myFont2;
+  font-size: 30px;
+  position: fixed;
+  left: 865px;
+  bottom: 1015px;
+}
+
+#Textfront2 {
+  font-family: myFont2;
+  font-size: 30px;
+  position: fixed;
+  left: 985px;
+  bottom: 1015px;
+}
+
+#Textfront3 {
+  position: fixed;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(212, 127, 57);
+  font-size: 50px;
+  left: 1220px;
+  bottom: 400px;
+}
+
+#Textfront4 {
+  position: fixed;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(212, 127, 57);
+  font-size: 150px;
+  left: 1100px;
+  bottom: 300px;
+}
+
+#Textfront5 {
+  position: fixed;
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  font-size: 20px;
+  left: 1340px;
+  bottom: 300px;
+}
+
+#Textfront6 {
+  position: fixed;
+  color: rgb(212, 127, 57);
+  font-family: "Times New Roman", Times, serif;
+  text-align: right;
+  font-size: 40px;
+  left: 500px;
+  bottom: 600px;
+}
+
+#Textfront7 {
+  position: fixed;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  font-size: 40px;
+  left: 500px;
+  bottom: 140px;
+}
+
+#logo {
+  width: 30px;
+  position: fixed;
+  left: 947px;
+  bottom: 1030px;
+}
+
+#BildeForside1 {
+  position: fixed;
+  width: 350px;
+  left: 1200px;
+  top: 200px;
+  border-radius: 3rem;
+}
+
+#LogoAbout {
+  width: 300px;
+  margin-left: 580px;
+  margin-top: 100px;
+}
+
+#AboutText {
+  font-size: 30px;
+  position: fixed;
+  bottom: 300px;
+  left: 280px;
+  text-align: center;
+  color: rgb(212, 127, 57);
+  font-family: "Times New Roman", Times, serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --winning-blocks: #2d414b;
+}
+
+body {
+  color: var(--orange);
+  font-family: "Finger Paint", cursive;
+}
+h1 {
+  font-size: 54px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#gameboard {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 780px;
+  margin-top: 50px;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  font-size: 120px;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+}
+.box:nth-child(3n) {
+  border-right: none;
+}
+.box:nth-child(6) ~ .box {
+  border-bottom: none;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: 200ms transform;
+  font-weight: 600;
+  margin-left: 875px;
+  margin-top: 100px;
+}
+button:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+#Mark {
+  height: 400px;
+  position: fixed;
+  left: 960px;
+}
+
+#Hilde {
+  height: 400px;
+  position: fixed;
+  left: 680px;
+}
+
+#Simen {
+  height: 400px;
+  position: fixed;
+  left: 400px;
+}
+
+#Lars {
+  height: 400px;
+  position: fixed;
+  left: 115px;
+}
+
+#Morten {
+  height: 400px;
+  position: fixed;
+  left: 1520px;
+}
+
+#Robert {
+  height: 400px;
+  position: fixed;
+  left: 1240px;
+}
+
+#Pumphouse {
+  height: 400px;
+  position: fixed;
+  left: 115px;
+  top: 600px;
+}
+
+#OldMan {
+  height: 400px;
+  position: fixed;
+  left: 400px;
+  top: 600px;
+}
+
+#Tram {
+  height: 400px;
+  position: fixed;
+  left: 680px;
+  top: 600px;
+}
+
+#Olden {
+  height: 400px;
+  position: fixed;
+  left: 960px;
+  top: 600px;
+}
+
+#Oldenvannet {
+  height: 400px;
+  position: fixed;
+  left: 1240px;
+  top: 600px;
+}
+
+#Preike {
+  height: 400px;
+  position: fixed;
+  left: 1520px;
+  top: 600px;
+}
+
+#Font1 {
+  font-family: myFont2;
+  font-size: 200px;
+  position: fixed;
+  left: 870px;
+  top: 130px;
+}
+
+#Font2 {
+  font-family: myFont2;
+  font-size: 200px;
+  margin-left: 800px;
+  top: 280px;
+  position: fixed;
+}
