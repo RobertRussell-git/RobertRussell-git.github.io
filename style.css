@@ -11,27 +11,12 @@
   height: 13vh;
 }
 
-.Background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  filter: blur(8px);
-  background-color: #f2ebe2;
-}
-
 .navbar {
-  margin: auto;
-  padding: 0.5rem 1.5rem;
+  padding: 15px;
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 4 12px rgba(0, 0, 0, 0.1);
-  margin-top: 55px;
+  margin: 55px auto auto;
 }
 
 .nav-links {
@@ -113,24 +98,27 @@ a {
   src: url(Chameleon.ttf);
 }
 
-#Textfront {
-  font-family: myFont2;
-  font-size: 30px;
-  position: fixed;
-  left: 865px;
-  bottom: 1015px;
+.content {
+  width: 1200px;
+  position:absolute;
+  top: 200px;
+  transform:translateX(-50%);
+  left: 50%;
+  text-align: left;
 }
 
-#Textfront2 {
-  font-family: myFont2;
+.logo {
+  display:flex;
+  justify-content: center;
+}
+
+.logo-font {
+  font-family: myFont2, serif;
   font-size: 30px;
-  position: fixed;
-  left: 985px;
-  bottom: 1015px;
+  display: inline-block;
 }
 
 #Textfront3 {
-  position: fixed;
   font-family: "Times New Roman", Times, serif;
   color: rgb(212, 127, 57);
   font-size: 50px;
@@ -139,7 +127,6 @@ a {
 }
 
 #Textfront4 {
-  position: fixed;
   font-family: "Times New Roman", Times, serif;
   color: rgb(212, 127, 57);
   font-size: 150px;
@@ -148,47 +135,41 @@ a {
 }
 
 #Textfront5 {
-  position: fixed;
   font-family: "Times New Roman", Times, serif;
-  text-align: right;
   font-size: 20px;
-  left: 1340px;
-  bottom: 300px;
 }
 
 #Textfront6 {
-  position: fixed;
   color: rgb(212, 127, 57);
-  font-family: "Times New Roman", Times, serif;
-  text-align: right;
-  font-size: 40px;
-  left: 500px;
-  bottom: 600px;
-}
-
-#Textfront7 {
-  position: fixed;
-  color: black;
   font-family: "Times New Roman", Times, serif;
   text-align: left;
   font-size: 40px;
-  left: 500px;
-  bottom: 140px;
+  padding: 50px;
+}
+
+#Textfront7 {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  margin-right: 100px;
+  text-align: right;
+  font-size: 40px;
+  padding-top: 50px;
 }
 
 #logo {
   width: 30px;
-  position: fixed;
-  left: 947px;
-  bottom: 1030px;
+}
+
+.image-text-container {
+  width: 100%;
+  display: flex;
 }
 
 #BildeForside1 {
-  position: fixed;
   width: 350px;
-  left: 1200px;
-  top: 200px;
   border-radius: 3rem;
+  right: 0;
+  display: inline-block;
 }
 
 #LogoAbout {
@@ -199,7 +180,6 @@ a {
 
 #AboutText {
   font-size: 30px;
-  position: fixed;
   bottom: 300px;
   left: 280px;
   text-align: center;
@@ -218,8 +198,11 @@ a {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   color: var(--orange);
   font-family: "Finger Paint", cursive;
+  background-color: #f2ebe2;
 }
 h1 {
   font-size: 54px;
